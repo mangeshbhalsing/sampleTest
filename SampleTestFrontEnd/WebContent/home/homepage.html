@@ -1,0 +1,15 @@
+<div ng-controller="UserController as ctrl">
+<a ng-hide="islogged" href="#/register">Register</a>
+
+
+<a ng-hide="islogged"  href="#/login">Login</a>
+
+<a ng-show="islogged"  ng-click="ctrl.logout()">Logout</a>
+
+<p  ng-show="islogged">{{currentUser.name}}:- You Logged in successfully</p>
+
+
+
+
+
+</div>

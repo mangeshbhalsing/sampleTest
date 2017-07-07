@@ -1,0 +1,70 @@
+
+
+<div ng-controller="UserController as ctrl">
+<div class="container">
+
+
+    <div class="row">
+    	<div class="col-md-4 col-md-offset-4">
+    		<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Login</h3>
+			 	</div>
+			 	<span ng-hide="ctrl.userLoggedIn">
+			  	<div class="panel-body">
+			    	<form name="form"  ng-submit="ctrl.login()" role="form">
+                    <fieldset>
+			    	  	<div class="form-group">
+								
+								<input type="text"
+									name="userID" id="userID" placeholder="UserName" class="form-control"
+									ng-model="ctrl.user.userID" required /> 
+								
+								
+
+
+							</div>
+							<div class="form-group"
+								>
+								<input type="password"
+									name="pasword" id="pasword" placeholder="Password" class="form-control"
+									ng-model="ctrl.user.pasword" required /> 
+							</div>
+							<div class="form-actions">
+								<button type="submit" ng-disabled="form.$invalid"
+									class="btn btn-primary">Login</button>
+								<a href="#/register" class="btn btn-link">Register</a>
+							</div>
+			    	</fieldset>
+			      	</form>
+                      
+                   
+			    </div>
+			    </span>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!-- <CENTER><h2>LOGIN </h2></CENTER>
+<div ng-controller="UserController as ctrl">
+<form class="col s12" ng-submit="ctrl.login()">
+ <div class="input-field col s6">
+          <input ng-model="ctrl.user.userID" id="userID" type="text" class="validate">
+         
+        </div>
+        
+        <div class="input-field col s6">
+          <input ng-model="ctrl.user.pasword id="pasword" type="password" class="validate">
+         
+        </div>
+        
+        
+        
+        
+        
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+</div> -->

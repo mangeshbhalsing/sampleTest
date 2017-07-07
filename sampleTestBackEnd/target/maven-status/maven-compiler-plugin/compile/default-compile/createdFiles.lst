@@ -1,0 +1,4 @@
+com\niit\sampletest\applicationcontextconfig\ApplicationContextConfig.class
+com\niit\sampletestbackend\model\User.class
+com\niit\sampletestbackend\DAOImpl\UserDAOImpl.class
+com\niit\sampletestbackend\DAO\UserDAO.class
